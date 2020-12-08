@@ -58,3 +58,13 @@ functions:
     events:
       - websocket:
           route: _sendMessageToRecipent
+  websocket-show-detials:
+    handler: dist/websockets/customHandlers/onDisplayDetails.handler
+    events:
+      - websocket:
+          route: _displayDetails
+  websocket-hide-details:
+    handler: dist/websockets/customHandlers/onHideDetails.handler
+    events:
+      - websocket:
+          route: _hideDetails
